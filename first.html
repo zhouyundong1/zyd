@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+	<title>第一个html标签</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<b>加粗</b><br>
+不加粗<br>
+<!-- 标题标签 -->
+<h1 style="width:100px;height:100px;background:green">h1标签</h1>
+<h2>h2标签</h2>
+<h3>h3标签</h3>
+<h4>h4标签</h4>
+<h5>h5标签</h5>
+<h6>h6标签</h6>
+<!-- 段落标签 -->
+<P style="width:100px;height:100px;background:blue">段落标签1</P>
+<P>段落标签2</P>
+<P>段落标签3</P>
+<P>段落标签4</P>
+<!-- 块标签 -->
+<div style="width:100px;height:100px;background:red">div内容</div>
+左边内容<div>div内容</div>右边内容<br>
+左边内容<span>span内容</span>右边内容<br>
+<B>b标签</B><br>
+<STRONG>strong标签</STRONG><br>
+<i>i标签</i><br>
+<em>EM标签</em><br>
+<del>DEL标签</del><br>
+<small>SAMLL标签</small>正常字体<big>BIG标签</big><br>
+<u>U标签</u><br>
+标签标签<sub>标签</sub>标签标签标签<sup>标签</sup>标签标签标签
+<!-- 无序列表 -->
+<ul type="NONE">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ul>
+<ul type="CIRCLE">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ul>
+<ul type="SQUARE">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ul>
+<ul type="DISC">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ul>
+<!-- 有序列表type有1,a,A,i,I -->
+<ol type="a">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ol>
+<ol type="i">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ol>
+<ol type="I">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ol>
+<ol type="A">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ol>
+<ol type="1">
+	<li>列表项1</li>
+	<li>列表项2</li>
+	<li>列表项3</li>
+	<li>列表项4</li>
+</ol>
+<!-- 自定义列表 -->
+<dl>
+	<dt>衣服</dt>
+	<dd>外套</dd>
+	<dd>毛衣</dd>
+	<dt>裤子</dt>
+	<dd>牛仔裤</dd>
+	<dd>裙子</dd>
+</dl>
+<!-- form表单：帮助服务器收集数据的机制
+	文本框<input type="text" 密码是password>
+	placeholder设置文本框的提示信息
+	value设置文本框的默认值 -->
+<form>
+	用户名： <input type="text" placeholder="请设置用户名" ><BR>	
+	用户名： <input type="text" value="百度用户" ><BR>
+	密码：<input type="password" placeholder="请设置用户名密码" value="123456"><BR>
+	<!-- 单选按钮input type="radio"
+	 两个或者多个按钮绑定成一个单选按钮组，必须把单选按钮的name属性值设置一样   checked默认选中   disabled 禁用-->
+性别： <label><input type="radio" name="sex" checked>男</label>
+       <label><input type="radio" name="sex" >女</label>
+       <label><input type="radio" name="sex" disabled>  保密</label><br>
+       <!-- 复选框 -->
+       <label><label><input type="checkbox" name="web[]" checked>html</label>
+       <label><input type="checkbox" name="web[]" >css</label>
+       <label><input type="checkbox" name="web[]" disabled>gs</label><br>
+<!-- 下拉列表 -->
+<select>
+<option value="1">请选择</option>
+<option value="2" selected>00：00-24：00</option>
+<option value="3">00：00-6：00</option>
+<option value="4" disabled>6：00-12：00</option>
+<option value="5">12：00-18：00</option>
+<option value="6">18：00-24：00</option>
+</select><br>
+
+ <!-- 文本域 多行文本框 -->
+ <textarea name="" style="width:100px;height:100px"></textarea><br>
+ <!-- 提交按钮 -->
+<input type="submit" value="注册">
+<input type="button" value="按钮">
+<button>按钮</button>
+<input type="RESET" value="重来">
+<input type="image" src="zxc.png"><BR>
+<input type="file" name="yourself" size="50">
+<!-- 字段集标签 -->
+<fieldset style="width:100px;height:100px" >
+<legend style="width:40px;height:40px;border:1px solid black;border-radius:50%">性别</legend>
+<label><input type="radio" name="sex" value="boy" />男</label>
+<label><input type="radio" name="sex" value="girl" />女</label>
+</fieldset>
+</form>
+<!-- 所有的标签控件都会有的属性 
+name 属性值还必须不一样
+ -->
+实体&nbsp;字符1&lt;2 3&gt;2&quot;实体字符2&quot;  &reg; &trade; &cent; &pound; &yen; &euro; &times;&divide; &amp;<br>
+
+<!-- 绝对路径：盘符绝对路径，服务器绝对路径
+相对路径：当前目录./（可以省略）上级目录../
+属性width：设置图片宽度；height：设置图片高度
+一般只设置一个属性 让另一个自适应
+可以用px设置 也可以用% -->
+<img src="D:\wwwroot\zxc.png" alt=""><BR>
+<img src="http://localhost/zxc.png" alt="" width=500px height=100px><BR>
+<img src="http://imgsrc.baidu.com/imgad/pic/item/6d81800a19d8bc3e3bad2adf888ba61ea8d34579.jpg" alt="次元" width=33% title="次元" ><BR>
+<!-- a标签 超链接标签
+href指定跳转的页面 使用绝对路径和相对路径
+target设置页面的打开方式
+_self 在本窗口打开新页面 （默认）
+_blank 在新窗口打开
+parent在父级窗口打开
+top  在顶级窗口打开-->
+<a href="https://www.baidu.com/">跳转1</a>
+<a href="homework.html">跳转2</a>
+<a href="../day2/second.html">跳转3</a>
+<a href="111.html">跳转4</a>
+<a href="https://www.baidu.com/" target="_blank">跳转5</a>
+
+<a href="https://www.baidu.com/">
+<img src="D:\wwwroot\zxc.png">
+</a>
+<a href="https://www.baidu.com/">
+<div style="width:100px;height:100px;background:red"></div>
+</a>
+
+<a href="https://www.baidu.com/"><div style="width:100px;height:100px;background:blue">qq</div></a>
+<!-- 标签的嵌套
+1.块标签可以嵌套块标签
+2.行标签可以嵌套行标签
+3.块标签可以嵌套行标签 -->
+</body>
+</html>
